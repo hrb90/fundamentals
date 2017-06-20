@@ -29,6 +29,10 @@ let rec append l1 l2 =
   | [] -> l2
   | hd::tl -> hd::(append tl l2);;
 
+
+(*
+  Not actually fast because the implementation of append is O(n)
+*)
 let rec qsort l =
   match l with
   | [] -> []

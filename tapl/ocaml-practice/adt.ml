@@ -17,7 +17,7 @@ let rec contains v tree =
   let containsv = contains v
   in
   match tree with
-  | Leaf x -> x == v
+  | Leaf x -> x = v
   | Tree (left, right) -> containsv left || containsv right;;
 
 let rec search test tree =
